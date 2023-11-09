@@ -1,0 +1,66 @@
+{
+  "index.css": {
+    "file": "assets/index-d4d8ca96.css",
+    "src": "index.css"
+  },
+  "index.html": {
+    "css": [
+      "assets/index-d4d8ca96.css"
+    ],
+    "dynamicImports": [
+      "src/views/Question.vue",
+      "src/views/QuestionEditor.vue",
+      "src/views/AnswerEditor.vue",
+      "src/views/NotFound.vue"
+    ],
+    "file": "assets/index-423b4fec.js",
+    "isEntry": true,
+    "src": "index.html"
+  },
+  "src/views/AnswerEditor.vue": {
+    "file": "assets/AnswerEditor-8fee3bdc.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/AnswerEditor.vue"
+  },
+  "src/views/NotFound.css": {
+    "file": "assets/NotFound-01fc4a63.css",
+    "src": "src/views/NotFound.css"
+  },
+  "src/views/NotFound.vue": {
+    "css": [
+      "assets/NotFound-01fc4a63.css"
+    ],
+    "file": "assets/NotFound-fec4b722.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/NotFound.vue"
+  },
+  "src/views/Question.css": {
+    "file": "assets/Question-e4cebfb6.css",
+    "src": "src/views/Question.css"
+  },
+  "src/views/Question.vue": {
+    "css": [
+      "assets/Question-e4cebfb6.css"
+    ],
+    "file": "assets/Question-4ac8deff.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/Question.vue"
+  },
+  "src/views/QuestionEditor.vue": {
+    "file": "assets/QuestionEditor-999fc27b.js",
+    "imports": [
+      "index.html"
+    ],
+    "isDynamicEntry": true,
+    "src": "src/views/QuestionEditor.vue"
+  }
+}
