@@ -8,8 +8,8 @@
       <router-link class="btn btn-sm btn-warning" :to="{name: 'answer-editor', params: {uuid: answer.uuid}}">
         Edit
       </router-link>
-      <button @click="showDeleteConfirmationButton = !showDeleteConfirmationButton" class="btn btn-sm btn-danger mx-1">
-        Delete
+      <button @click="toggleDeleteConfirmationButton" class="btn btn-sm btn-danger mx-1">
+        {{ deleteButtonText }}
       </button>
       <button v-show="showDeleteConfirmationButton" @click="triggerDeleteAnswer" class="btn btn-sm btn-outline-danger">
         Yes, delete my answer
@@ -48,7 +48,8 @@ export default {
     return {
       userLikedAnswer: this.answer.user_has_liked_answer,
       likesCounter: this.answer.likes_count,
-      showDeleteConfirmationButton: false
+      showDeleteConfirmationButton: false,
+      deleteButtonText: "Delete"
     }
   },
   computed: {
@@ -72,6 +73,10 @@ export default {
       } catch(error) {
         console.log(error)
       }
+    },
+    toggleDeleteConfirmationButton() {
+      this.showDeleteConfirmationButton = !this.showDeleteConfirmationButton
+      this.deleteButtonText = this.showDeleteConfirmationButton ? "Cancel" : "Delete"
     },
     async unlikeAnswer() {
       this.userLikedAnswer = false

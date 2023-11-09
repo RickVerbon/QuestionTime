@@ -3,7 +3,7 @@
     <router-link :to="{name: 'question-editor', params: {slug: slug}}" class="btn btn-sm btn-warning me-1">
       Edit
     </router-link>
-    <button @click="showDeleteConfirmationButton = !showDeleteConfirmationButton" class="btn btn-sm btn-danger mx-1">Delete</button>
+    <button @click="toggleDeleteConfirmationButton" class="btn btn-sm btn-danger mx-1">{{ deleteButtonText }}</button>
     <button v-show="showDeleteConfirmationButton" @click="deleteQuestion" class="btn btn-sm btn-outline-danger">Yes, delete my question</button>
     <hr>
   </div>
@@ -22,7 +22,8 @@ export default {
   },
   data() {
     return {
-      showDeleteConfirmationButton: false
+      showDeleteConfirmationButton: false,
+      deleteButtonText: "Delete"
     }
   },
   methods: {
@@ -34,6 +35,10 @@ export default {
       } catch(error) {
         console.log(error)
       }
+    },
+    toggleDeleteConfirmationButton() {
+      this.showDeleteConfirmationButton = !this.showDeleteConfirmationButton
+      this.deleteButtonText = this.showDeleteConfirmationButton ? "Cancel" : "Delete"
     }
   },
 };
