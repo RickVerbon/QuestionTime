@@ -13,12 +13,12 @@
       "src/views/AnswerEditor.vue",
       "src/views/NotFound.vue"
     ],
-    "file": "assets/index-423b4fec.js",
+    "file": "assets/index-4d33741b.js",
     "isEntry": true,
     "src": "index.html"
   },
   "src/views/AnswerEditor.vue": {
-    "file": "assets/AnswerEditor-8fee3bdc.js",
+    "file": "assets/AnswerEditor-b018e7a2.js",
     "imports": [
       "index.html"
     ],
@@ -33,7 +33,7 @@
     "css": [
       "assets/NotFound-01fc4a63.css"
     ],
-    "file": "assets/NotFound-fec4b722.js",
+    "file": "assets/NotFound-bf39d640.js",
     "imports": [
       "index.html"
     ],
@@ -48,7 +48,7 @@
     "css": [
       "assets/Question-e4cebfb6.css"
     ],
-    "file": "assets/Question-4ac8deff.js",
+    "file": "assets/Question-d6277ae7.js",
     "imports": [
       "index.html"
     ],
@@ -56,7 +56,7 @@
     "src": "src/views/Question.vue"
   },
   "src/views/QuestionEditor.vue": {
-    "file": "assets/QuestionEditor-999fc27b.js",
+    "file": "assets/QuestionEditor-1b39a95e.js",
     "imports": [
       "index.html"
     ],

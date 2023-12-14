@@ -1,6 +1,7 @@
 PROJECT_NAME = qtime
+FRONTEND_DIR = frontend
 
-factory-reset: stop clean rebuild makemigrations migrate fixtures
+factory-reset: stop clean rebuild makemigrations migrate fixtures build-frontend
 
 stop:
 	docker-compose down
@@ -33,4 +34,10 @@ superuser:
 bash:
 	docker-compose run --rm app bash
 
-.PHONY: factory-reset migrate tail superuser
+build-frontend:
+	cd $(FRONTEND_DIR) && npm install && npm run build # install dependencies and build static files
+
+dev:
+	cd $(FRONTEND_DIR) && npm run dev
+
+.PHONY: factory-reset migrate tail superuser build-frontend dev bash
