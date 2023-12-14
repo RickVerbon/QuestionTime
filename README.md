@@ -21,6 +21,12 @@ After the project is cloned, switch to the qtime directory in the terminal and r
 make factory-reset
 ```
 
-This command should build and run the container.
 
 **NOTE**: ```make factory-reset``` removes unused containers, images and volumes.
+
+To make sure Vue.JS works properly for development, run the following command in the terminal
+```
+make dev
+```
+
+After the container is running, you can access the application on ```localhost:8008```
