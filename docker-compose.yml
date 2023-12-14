@@ -1,0 +1,25 @@
+version: "3"
+
+services:
+  app:
+    build:
+      context: .
+      dockerfile: docker/dev/Dockerfile
+    container_name: qtime
+    restart: unless-stopped
+    ports:
+      - "8008:8008"
+    volumes:
+      - .:/app
+    depends_on:
+      - qtimedb
+
+  qtimedb:
+    image: postgres
+    container_name: qtime-db
+    environment:
+      POSTGRES_DB: qtime
+      POSTGRES_USER: qtime
+      POSTGRES_PASSWORD: qtime
+    ports:
+      - "5438:5432"

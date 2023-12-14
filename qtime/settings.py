@@ -11,7 +11,9 @@ https://docs.djangoproject.com/en/4.2/ref/settings/
 """
 
 from pathlib import Path
-
+from dotenv import load_dotenv
+import os
+load_dotenv()
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
 
@@ -23,7 +25,10 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-_b)3kd++(6v-g1b-)d^!#9nc%562_73(1z8uvm5j&kzved%15#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+if os.environ.get("PRODUCTION") == "True":
+    DEBUG = False
+else:
+    DEBUG = os.environ.get("DEBUG", "True") == "True"
 
 ALLOWED_HOSTS = ["*"]
 
@@ -85,9 +90,13 @@ WSGI_APPLICATION = 'qtime.wsgi.application'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#databases
 
 DATABASES = {
-    'default': {
-        'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': BASE_DIR / 'db.sqlite3',
+    "default": {
+        "ENGINE": "django.db.backends.postgresql",
+        "NAME": os.environ.get("PG_DB", "qtime"),
+        "USER": os.environ.get("PG_USER", "qtime"),
+        "PASSWORD": os.environ.get("PG_PASS", "qtime"),
+        "HOST": os.environ.get("PG_HOST", "qtime-db"),
+        "PORT": os.environ.get("PG_PORT", "5432")
     }
 }
 

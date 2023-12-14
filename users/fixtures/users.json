@@ -1,0 +1,92 @@
+[
+  {
+    "model": "users.customuser",
+    "pk": 1,
+    "fields": {
+      "password": "pbkdf2_sha256$5000$frietjes$5GUTc0cGQUDhoUdJwCzxpFbsqNKZx4/LFjj2hfC+cbo=",
+      "last_login": "2023-01-01T00:00:00Z",
+      "is_superuser": false,
+      "username": "Anke",
+      "first_name": "Anke",
+      "last_name": "Verbon",
+      "email": "rick89@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+  {
+    "model": "users.customuser",
+    "pk": 2,
+    "fields": {
+      "password": "pbkdf2_sha256$5000$frietjes$5GUTc0cGQUDhoUdJwCzxpFbsqNKZx4/LFjj2hfC+cbo=",
+      "last_login": "2023-01-01T00:00:00Z",
+      "is_superuser": false,
+      "username": "koek",
+      "first_name": "Rick",
+      "last_name": "Verbon",
+      "email": "rick89@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+    {
+    "model": "users.customuser",
+    "pk": 3,
+    "fields": {
+      "password": "pbkdf2_sha256$5000$frietjes$5GUTc0cGQUDhoUdJwCzxpFbsqNKZx4/LFjj2hfC+cbo=",
+      "last_login": "2023-01-01T00:00:00Z",
+      "is_superuser": false,
+      "username": "bert",
+      "first_name": "Rick",
+      "last_name": "Verbon",
+      "email": "rick89@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+    {
+    "model": "users.customuser",
+    "pk": 4,
+    "fields": {
+      "password": "pbkdf2_sha256$5000$frietjes$5GUTc0cGQUDhoUdJwCzxpFbsqNKZx4/LFjj2hfC+cbo=",
+      "last_login": "2023-01-01T00:00:00Z",
+      "is_superuser": false,
+      "username": "John",
+      "first_name": "Rick",
+      "last_name": "Verbon",
+      "email": "rick89@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  },
+    {
+    "model": "users.customuser",
+    "pk": 5,
+    "fields": {
+      "password": "pbkdf2_sha256$5000$frietjes$5GUTc0cGQUDhoUdJwCzxpFbsqNKZx4/LFjj2hfC+cbo=",
+      "last_login": "2023-01-01T00:00:00Z",
+      "is_superuser": false,
+      "username": "Kiki",
+      "first_name": "Rick",
+      "last_name": "Verbon",
+      "email": "rick89@gmail.com",
+      "is_staff": false,
+      "is_active": true,
+      "date_joined": "2023-01-01T00:00:00Z",
+      "groups": [],
+      "user_permissions": []
+    }
+  }
+]
