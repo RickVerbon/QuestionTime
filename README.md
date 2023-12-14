@@ -22,7 +22,7 @@ make factory-reset
 ```
 
 
-**NOTE**: ```make factory-reset``` removes unused containers, images and volumes.
+**NOTE**: ```make factory-reset``` removes unused images and volumes.
 
 To make sure Vue.JS works properly for development, run the following command in the terminal
 ```
